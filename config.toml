@@ -13,18 +13,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "About"
     url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = ""
-[[menu.main]]
-    name = "Twitter"
-    url = ""
 
 [params]
-    description = ""
+    description = "Grassland field work in 2018."
 
     [params.logo]
-    url = "logo.png"
+    url = "uav.png"
     width = 50
     height = 50
     alt = "Logo"

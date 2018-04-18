@@ -1,7 +1,7 @@
 +++
-date = "2016-05-05T21:48:51-07:00"
+date = "2018-04-18T10:26:51+01:00"
 title = "About"
 
 +++
 
-Lorem ipsum dolor sit amet.
+A static website to share progress of the field work in 2018.

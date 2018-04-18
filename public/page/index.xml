@@ -6,7 +6,7 @@
     <description>Recent content in Pages on Lithium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 18 Apr 2018 10:26:51 +0100</lastBuildDate>
     
 	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,10 @@
     <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      <pubDate>Wed, 18 Apr 2018 10:26:51 +0100</pubDate>
       
       <guid>/about/</guid>
-      <description>Lorem ipsum dolor sit amet.</description>
+      <description>A static website to share progress of the field work in 2018.</description>
     </item>
     
   </channel>
