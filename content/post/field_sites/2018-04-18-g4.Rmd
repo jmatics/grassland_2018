@@ -44,17 +44,17 @@ centerMap$label <- lab #add column using created vector
 #centerMap$sID <- c(336,326,321,330,324,327,333,332,329,335,325,334,319,323,331,320,322,328)
 ```
 
-# Grassland-4 (G4)
+## Grassland-4 (G4)
 
-## Description
+### Description
 
-+ Permanent grassland
-+ Intensively managed and fertilised
-+ Have more than 3 cuts per year
-+ First cut is after 15.05.2018
-+ Located on the border of Hesse and Lower Saxony
+* Permanent grassland
+* Intensively managed and fertilised
+* Have more than 3 cuts per year
+* First cut is after 15.05.2018
+* Located on the border of Hesse and Lower Saxony
 
-## Location map
+### Location map (interactive)
 
 ```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
 
@@ -84,7 +84,7 @@ leaflet(width=650, height=450) %>%
 ```
 
 
-## Subplot distribution map
+### Subplot distribution map
 
 ```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
 #Map making with ggplot2
