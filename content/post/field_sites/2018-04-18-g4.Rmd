@@ -102,3 +102,11 @@ ggplot() +
         plot.subtitle = element_text(face = "bold", size = 14)) +
   coord_fixed() 
 ```
+
+### Harvest 01 (401 - 420)
+
+* Date : 10-05-2018
+* Collected data
+    + Cubert hyperspectral images
+    + Laser scan data
+    + Biomass sampling
