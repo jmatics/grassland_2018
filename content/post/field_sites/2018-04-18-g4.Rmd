@@ -110,3 +110,12 @@ ggplot() +
     + Cubert hyperspectral images
     + Laser scan data
     + Biomass sampling
+    
+### Harvest 02 (421 - 440)
+
+* Date : 06-06-2018
+* Collected data
+    + Cubert hyperspectral images
+    + Laser scan data
+    + Speices survey
+    + Biomass sampling
