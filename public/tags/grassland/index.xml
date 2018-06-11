@@ -6,10 +6,19 @@
     <description>Recent content in Grassland on Field-Work-2018</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 19 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/grassland/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>G1</title>
+      <link>/2018/06/11/g1/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/06/11/g1/</guid>
+      <description>Grassland-1 (G1)DescriptionPermanent grasslandExtensive utilisationOne cuts per yearLocated in high altitudeLocated in nature protection areaLocation map (interactive){&#34;x&#34;:{&#34;options&#34;:{&#34;crs&#34;:{&#34;crsClass&#34;:&#34;L.CRS.EPSG3857&#34;,&#34;code&#34;:null,&#34;proj4def&#34;:null,&#34;projectedBounds&#34;:null,&#34;options&#34;:{}}},&#34;calls&#34;:[{&#34;method&#34;:&#34;addProviderTiles&#34;,&#34;args&#34;:[&#34;Esri.WorldImagery&#34;,null,null,{&#34;errorTileUrl&#34;:&#34;&#34;,&#34;noWrap&#34;:false,&#34;zIndex&#34;:null,&#34;unloadInvisibleTiles&#34;:null,&#34;updateWhenIdle&#34;:null,&#34;detectRetina&#34;:false,&#34;reuseTiles&#34;:false}]},{&#34;method&#34;:&#34;addPolygons&#34;,&#34;args&#34;:[[[[{&#34;lng&#34;:[9.84213765056525,9.84244192003363,9.84206547218869,9.84176120427917,9.84213765056525],&#34;lat&#34;:[51.2136743003182,51.2135560811205,51.2131738696316,51.2132920878562,51.2136743003182]}]]],null,null,{&#34;lineCap&#34;:null,&#34;lineJoin&#34;:null,&#34;clickable&#34;:true,&#34;pointerEvents&#34;:null,&#34;className&#34;:&#34;&#34;,&#34;stroke&#34;:true,&#34;color&#34;:&#34;yellow&#34;,&#34;weight&#34;:1,&#34;opacity&#34;:1,&#34;fill&#34;:false,&#34;fillColor&#34;:&#34;#cccccc&#34;,&#34;fillOpacity&#34;:0.2,&#34;dashArray&#34;:null,&#34;smoothFactor&#34;:0.5,&#34;noClip&#34;:false},null,null,null,null,null]}],&#34;limits&#34;:{&#34;lat&#34;:[51.2131738696316,51.2136743003182],&#34;lng&#34;:[9.84176120427917,9.84244192003363]}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}Subplot distribution mapHarvest 01 (101 - 120)Date :Collected data</description>
+    </item>
     
     <item>
       <title>G3</title>

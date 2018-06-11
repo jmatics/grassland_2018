@@ -1,0 +1,109 @@
+---
+title: G1
+author: JW
+date: '2018-06-11'
+slug: g1
+categories:
+  - grassland
+  - data_collection
+  - field_work
+tags:
+  - grassland
+  - field_work
+  - data
+---
+
+
+```{r setup, include=FALSE}
+library(sp)
+library(rgdal)
+library(maptools)
+library(ggplot2)
+library(leaflet)
+library(data.table)
+library(ggthemes)
+library(ggpubr)
+windowsFonts(Helvetica=windowsFont("Helvetica-Regular"))
+
+setwd("D:/Data_Collection/2018/GIS_data/G1/")
+
+mainplot <- readOGR(dsn = ".", layer = "g1_poly_epsg3044")
+subplot <- readOGR(dsn = ".", layer = "g1_random_subplots")
+center <- readOGR(dsn = ".", layer = "g1_random_points")
+
+#convert center points SPDF to normal DF
+centerMap  <- as.data.frame.matrix(center@coords %>% data.table()) 
+names(centerMap) <- c("X", "Y") #change column names
+
+#create new vector as a label from square polygon to create labels in the map
+lab <- c(paste("g1_0", as.character(subplot@data$id)[1:9], sep = ""), paste("g1_", as.character(subplot@data$id[10:20]), sep = ""))
+centerMap$label <- lab #add column using created vector
+#centerMap$sID <- c(155:172)
+#centerMap$sID <- c(336,326,321,330,324,327,333,332,329,335,325,334,319,323,331,320,322,328)
+```
+
+## Grassland-1 (G1)
+
+### Description
+
+* Permanent grassland
+* Extensive utilisation
+* One cuts per year
+* Located in high altitude
+* Located in nature protection area
+
+### Location map (interactive)
+
+```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
+
+mainplot_84 <- spTransform(mainplot, CRS("+init=epsg:4326"))
+subplot_84 <- spTransform(subplot, CRS("+init=epsg:4326"))
+center_84 <- spTransform(center, CRS("+init=epsg:4326"))
+
+#convert center points SPDF to normal DF
+centerMap_84  <- as.data.frame.matrix(center_84@coords %>% data.table()) 
+names(centerMap_84) <- c("lon", "lat") #change column names
+
+leaflet(width=650, height=450) %>%
+  # base map
+  addProviderTiles("Esri.WorldImagery") %>%
+  # study area
+  addPolygons(data=mainplot_84,
+              stroke=TRUE, color="yellow", weight=1, opacity=1,
+              fill=FALSE, fillColor="#cccccc", smoothFactor=0.5) #%>%
+  
+  # subplots centers
+  #addCircles(data=centerMap_84,
+             #lng=~lon, lat=~lat,
+             #radius=1, # size is in m for addCircles O_o
+             #color="forestgreen", weight=1, opacity=1,
+             #fillColor="gold", fillOpacity=1)
+
+```
+
+
+### Subplot distribution map
+
+```{r echo = FALSE, error = FALSE, warning = FALSE, message = FALSE}
+#Map making with ggplot2
+ggplot() + 
+  geom_polygon(data = mainplot, aes(x = long, y = lat, group = group), fill = "azure2", color = "black") + 
+  geom_polygon(data = subplot, aes(x = long, y = lat, group = group), fill = "forestgreen", color = "darkgreen") +
+  #geom_point(data = centerMap, aes(x = X, y = Y), color = "red", size = 1) +
+  labs(x="Easting", y="Northing", 
+       title="G3", 
+       subtitle="Werrau, WIZ") +
+  theme_few(base_size = 12, base_family = "Helvetica") +
+  geom_text(data = centerMap, aes(label = label, x = X, y = Y), hjust = 0.5, vjust = 2, size=3) +
+  #geom_text(data = centerMap, aes(label = sID, x = X, y = Y), hjust = 0.5, vjust = -1.5, size=3) +
+  theme(plot.title = element_text(face = "bold", size = 18),
+        plot.subtitle = element_text(face = "bold", size = 14)) +
+  coord_fixed() 
+```
+
+
+### Harvest 01 (101 - 120)
+
+* Date : 
+* Collected data
+    + 
