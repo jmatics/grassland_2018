@@ -109,3 +109,9 @@ ggplot() +
     + Laser scan data
     + Species survey
     + Biomass sampling
+    
+### Post harvest data for DTM
+
+* Date : 07-06-2018
+* Collected data
+    + Laser scan data
