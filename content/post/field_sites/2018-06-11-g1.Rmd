@@ -91,8 +91,8 @@ ggplot() +
   geom_polygon(data = subplot, aes(x = long, y = lat, group = group), fill = "forestgreen", color = "darkgreen") +
   #geom_point(data = centerMap, aes(x = X, y = Y), color = "red", size = 1) +
   labs(x="Easting", y="Northing", 
-       title="G3", 
-       subtitle="Werrau, WIZ") +
+       title="G1", 
+       subtitle="Meissner") +
   theme_few(base_size = 12, base_family = "Helvetica") +
   geom_text(data = centerMap, aes(label = label, x = X, y = Y), hjust = 0.5, vjust = 2, size=3) +
   #geom_text(data = centerMap, aes(label = sID, x = X, y = Y), hjust = 0.5, vjust = -1.5, size=3) +
